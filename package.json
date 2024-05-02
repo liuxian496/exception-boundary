@@ -59,6 +59,7 @@
     "husky": "^9.0.11",
     "less": "^4.2.0",
     "litten": "^0.9.5",
+    "rollup-plugin-visualizer": "^5.12.0",
     "storybook": "^8.0.9",
     "typescript": "^5.2.2",
     "visualizer": "^3.0.1",
