@@ -18,17 +18,22 @@ export default defineConfig({
         },
         outDir: "dist",
         rollupOptions: {
-            external: ["react", "react-dom", "react/jsx-runtime"],
+            external: [
+                "react",
+                "react-dom",
+                "react/jsx-runtime",
+                "classnames",
+                "cyndi/dist/getPrefixNs",
+                "cyndi/isEmptyString",
+            ],
             output: [
                 {
                     manualChunks: (id: string) => {
                         if (id.includes("node_modules")) {
-                            if (id.includes("classnames")) {
-                                return "classnames";
-                            }
-                            if (id.includes("cyndi")) {
-                                return "cyndi";
-                            }
+                            console.log(id);
+                            // if (id.includes("cyndi")) {
+                            //     return "cyndi";
+                            // }
                             return "vender";
                         }
                     },
@@ -43,6 +48,6 @@ export default defineConfig({
     plugins: [
         react(),
         dts(),
-        // visualizer(),
+        // visualizer()
     ],
 });
