@@ -4,6 +4,9 @@
   "version": "2.0.0",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "sideEffects": [
+    "**/*.css"
+  ],
   "files": [
     "dist"
   ],
@@ -27,13 +30,13 @@
   },
   "dependencies": {
     "classnames": "^2.5.1",
-    "cyndi": "^0.2.0",
+    "cyndi": "^1.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "peerDependencies": {
     "classnames": "^2.5.1",
-    "cyndi": "^1.0.0",
+    "cyndi": "^1.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -70,7 +73,8 @@
     "typescript": "^5.2.2",
     "visualizer": "^3.0.1",
     "vite": "^5.2.0",
-    "vite-plugin-dts": "^3.9.0"
+    "vite-plugin-dts": "^3.9.0",
+    "vite-plugin-lib-inject-css": "^2.1.1"
   },
   "config": {
     "commitizen": {
