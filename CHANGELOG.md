@@ -1,3 +1,7 @@
+## [2.0.1](https://github.com/liuxian496/exception-boundary/compare/v2.0.0...v2.0.1) (2024-05-23)
+
+
+
 # [2.0.0](https://github.com/liuxian496/exception-boundary/compare/v1.0.1...v2.0.0) (2024-05-12)
 
 
